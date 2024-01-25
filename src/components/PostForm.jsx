@@ -18,6 +18,7 @@ const PostForm = ({create}) => {
     return (
         <div>
             <form>
+                {/* Управляемый компонент */}
                 <MyInput
                     value={post.title}
                     onChange={e => setPost({...post, title: e.target.value})}
